@@ -1,0 +1,14 @@
+
+@import "../../sass/_mixins.scss";
+
+components {
+  display: block;
+  margin: 1rem;
+  
+  .components {
+    margin-left: 2rem;
+    li {
+      margin: 1rem;
+    }
+  }
+}

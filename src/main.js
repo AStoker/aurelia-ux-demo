@@ -5,7 +5,8 @@ export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .feature('resources')
-    .plugin(PLATFORM.moduleName('@aurelia-ux/core'));
+    .plugin(PLATFORM.moduleName('@aurelia-ux/core'))
+    .plugin(PLATFORM.moduleName('@aurelia-ux/components'));
 
   if (environment.debug) {
     aurelia.use.developmentLogging();

@@ -7,18 +7,21 @@
     "displayName": "Aurelia-CLI"
   },
   "build": {
-    "targets": [{
-      "id": "web",
-      "displayName": "Web",
-      "index": "index.html",
-      "baseDir": ".",
-      "output": "scripts"
-    }],
+    "targets": [
+      {
+        "id": "web",
+        "displayName": "Web",
+        "index": "index.html",
+        "baseDir": ".",
+        "output": "scripts"
+      }
+    ],
     "options": {
       "minify": "stage & prod",
       "sourcemaps": "dev & stage"
     },
-    "bundles": [{
+    "bundles": [
+      {
         "name": "app-bundle.js",
         "source": [
           "[**/*.js]",
@@ -77,82 +80,129 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
-          "text"
+          "text",
+          {
+            "name": "moment",
+            "main": "./moment.js",
+            "path": "../node_modules/moment",
+            "resources": []
+          }
         ]
       },
       {
         "name": "aurelia-ux-bundle.js",
-        "dependencies": [{
+        "dependencies": [
+          {
             "name": "@aurelia-ux/core",
             "path": "../node_modules/@aurelia-ux/core/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{css,html}"
+            ]
+          },
+          {
+            "name": "@aurelia-ux/components",
+            "path": "../node_modules/@aurelia-ux/components/dist/amd",
+            "main": "index",
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/button",
             "path": "../node_modules/@aurelia-ux/button/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/checkbox",
             "path": "../node_modules/@aurelia-ux/checkbox/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/chip-input",
             "path": "../node_modules/@aurelia-ux/chip-input/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/grid",
             "path": "../node_modules/@aurelia-ux/grid/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/datepicker",
             "path": "../node_modules/@aurelia-ux/datepicker/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/input",
             "path": "../node_modules/@aurelia-ux/input/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/input-info",
             "path": "../node_modules/@aurelia-ux/input-info/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/list",
             "path": "../node_modules/@aurelia-ux/list/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/radio",
             "path": "../node_modules/@aurelia-ux/radio/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/textarea",
             "path": "../node_modules/@aurelia-ux/textarea/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
+          },
+          {
+            "name": "@aurelia-ux/form",
+            "path": "../node_modules/@aurelia-ux/form/dist/amd",
+            "main": "index",
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           },
           {
             "name": "@aurelia-ux/switch",
             "path": "../node_modules/@aurelia-ux/switch/dist/amd",
             "main": "index",
-            "resources": ["**/*.{css,html}"]
+            "resources": [
+              "**/*.{js,css,html}"
+            ]
           }
         ]
       }
@@ -161,14 +211,16 @@
       "type": "require",
       "configTarget": "vendor-bundle.js",
       "includeBundleMetadataInConfig": "auto",
-      "plugins": [{
-        "name": "text",
-        "extensions": [
-          ".html",
-          ".css"
-        ],
-        "stub": true
-      }]
+      "plugins": [
+        {
+          "name": "text",
+          "extensions": [
+            ".html",
+            ".css"
+          ],
+          "stub": true
+        }
+      ]
     }
   },
   "platform": {
