@@ -2,6 +2,119 @@
 # yarn lockfile v1
 
 
+"@aurelia-ux/button@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/button/-/button-0.7.1.tgz#41a385bd3dfb0e7c0dd8d5df29a745819753a913"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/checkbox@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/checkbox/-/checkbox-0.7.1.tgz#e5be1503def148ca52f37699cbc49f0bc5d45274"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/chip-input@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/chip-input/-/chip-input-0.7.1.tgz#a1338875602b1c34b206f4ce6dea5a35ffee5b50"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/components@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/components/-/components-0.7.1.tgz#0cad45554ff03f83bb87e368c718a470717f4c3e"
+  dependencies:
+    "@aurelia-ux/button" "^0.7.1"
+    "@aurelia-ux/checkbox" "^0.7.1"
+    "@aurelia-ux/chip-input" "^0.7.1"
+    "@aurelia-ux/core" "^0.7.1"
+    "@aurelia-ux/datepicker" "^0.7.1"
+    "@aurelia-ux/form" "^0.7.1"
+    "@aurelia-ux/grid" "^0.7.1"
+    "@aurelia-ux/input" "^0.7.1"
+    "@aurelia-ux/input-info" "^0.7.1"
+    "@aurelia-ux/list" "^0.7.1"
+    "@aurelia-ux/radio" "^0.7.1"
+    "@aurelia-ux/switch" "^0.7.1"
+    "@aurelia-ux/textarea" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/core@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/core/-/core-0.7.1.tgz#3748f83322dec423a56bac62c54cbf2ca9df5817"
+  dependencies:
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/datepicker@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/datepicker/-/datepicker-0.7.1.tgz#482f0059271ef2ff3ebcb62546f8336391bc1e75"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+    moment "^2.18.1"
+
+"@aurelia-ux/form@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/form/-/form-0.7.1.tgz#1c81b73ad4f95eda42450082b0bb925e3ff59bce"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/grid@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/grid/-/grid-0.7.1.tgz#0380c696bddd02bf10e940cf98f629104b3591f4"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/input-info@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/input-info/-/input-info-0.7.1.tgz#b6228bc6fd63e9d6cd6d36d73c7079b3f22d0768"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+    moment "^2.18.1"
+
+"@aurelia-ux/input@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/input/-/input-0.7.1.tgz#b8f1de888b8f460bc99088bd5f94587af8932b0f"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/list@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/list/-/list-0.7.1.tgz#e638bfaff92d338bb89e332b6acabf66d639afe8"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+    moment "^2.18.1"
+
+"@aurelia-ux/radio@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/radio/-/radio-0.7.1.tgz#907257b3759f3410939c1e05fc0cd5e533659102"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/switch@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/switch/-/switch-0.7.1.tgz#6c76061a1fe4769000afe6ab9997b6d102e78cdf"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+
+"@aurelia-ux/textarea@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@aurelia-ux/textarea/-/textarea-0.7.1.tgz#b8486a5145fd5aacfeb311be1ad08d172a4e425c"
+  dependencies:
+    "@aurelia-ux/core" "^0.7.1"
+    aurelia-framework "^1.0.0"
+    moment "^2.18.1"
+
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@gulp-sourcemaps/identity-map/-/identity-map-1.0.1.tgz#cfa23bc5840f9104ce32a65e74db7e7a974bbee1"
@@ -4049,6 +4162,10 @@ mixin-deep@^1.2.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@^2.18.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
 ms@0.7.1:
   version "0.7.1"
