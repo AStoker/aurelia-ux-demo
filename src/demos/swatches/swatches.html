@@ -1,0 +1,39 @@
+<template>
+  <require from="./swatches.css"></require>
+  <h2 id="swatches">Swatches</h2>
+  <article>
+    <label>Demo:</label>
+    <pre>
+      import {swatches} from '@aurelia-ux/core/colors/swatches';
+      let primary = swatches.red.p50;
+    </pre>
+  </article>
+  <ul class="swatches">
+    <li class="swatches-color-genre" repeat.for="parent of swatches">
+      <label if.bind="parent.hasChildren">${parent.name}</label>
+
+      <div
+        class="swatch"
+        style.bind="parent.style"
+        if.bind="!parent.hasChildren">
+          <div class="swatch-details">
+              <label>${parent.name}</label>
+              <label style="font-size: smaller">${parent.value}</label>
+            </div>
+      </div>
+
+      <ul if.bind="parent.hasChildren">
+        <li repeat.for="swatch of parent.value">
+          <div
+          class="swatch"
+          style.bind="swatch.style">
+            <div class="swatch-details">
+              <label>${swatch.name}</label>
+              <label style="font-size: smaller">${swatch.value}</label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</template>

@@ -1,4 +1,5 @@
 import environment from './environment';
+import { PLATFORM } from 'aurelia-pal';
 
 export function configure(aurelia) {
   aurelia.use

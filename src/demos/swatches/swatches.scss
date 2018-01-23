@@ -1,0 +1,45 @@
+@import "../../sass/_mixins.scss";
+
+swatches {
+  display: block;
+  margin: 1rem;
+  
+  .swatches {
+    > li {
+      // display: inline-block;
+    }
+
+  }
+  .swatches-color-genre {
+    margin-top: 2rem;
+    > label {
+      font-size: large;
+      margin: 1rem;
+      text-transform: capitalize;
+    }
+    li {
+      display: inline-block;
+    }
+  }
+
+  .swatch {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: var(--ux-design--elevation3dp);
+  }
+  .swatch-details {
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    line-height: 1.2rem;
+    box-shadow: var(--ux-design--elevation2dp);
+    > label {
+      display: block;
+    }
+  }
+
+}
