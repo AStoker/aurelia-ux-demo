@@ -8,7 +8,8 @@ components {
   .components {
     margin-left: 2rem;
     li {
-      margin: 1rem;
+      padding: 1rem;
+      border-bottom: 1px solid orange;
     }
   }
 }

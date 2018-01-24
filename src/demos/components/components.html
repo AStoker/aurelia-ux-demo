@@ -14,6 +14,8 @@
     <li>
       <label>Chip Input</label>
       <ux-chip-input></ux-chip-input>
+      <label>Tag Input</label>
+      <ux-chip-input type="tag"></ux-chip-input>
     </li>
     <li>
       <label>Datepicker</label>
@@ -21,7 +23,22 @@
     </li>
     <li>
       <label>Form</label>
-      <ux-form></ux-form>
+      <ux-form>
+          <div class="form-row">
+            <ux-field label="First Name">
+              <ux-input></ux-input>
+            </ux-field>
+            <ux-field label="Last Name">
+              <ux-input></ux-input>
+            </ux-field>
+          </div>
+          <ux-field label="Email Address">
+            <ux-input></ux-input>
+          </ux-field>
+          <ux-field label="Biography">
+            <ux-input></ux-input>
+          </ux-field>
+      </ux-form>
     </li>
     <li>
       <label>Input</label>
@@ -29,11 +46,36 @@
     </li>
     <li>
       <label>Input Info</label>
-      <ux-input-info></ux-input-info>
+      <ux-input></ux-input>
+      <ux-input-info ux-input-counter></ux-input-info>
     </li>
     <li>
       <label>List</label>
-      <ux-list></ux-list>
+      <ux-list>
+        <ux-list-item>
+          List Item 1
+        </ux-list-item>
+        <ux-list-item>
+          List Item 2
+        </ux-list-item>
+      </ux-list>
+    </li>
+    <li>
+      <label>List Two Line</label>
+      <ux-list type="two-line">
+        <ux-list-item>
+          <div class="list-content">
+            <span>List Item 1</span>
+            <div class="secondary">Secondary content</div>
+          </div>
+        </ux-list-item>
+        <ux-list-item>
+          <div class="list-content">
+            <span>List Item 2</span>
+            <div class="secondary">Secondary content</div>
+          </div>
+        </ux-list-item>
+      </ux-list>
     </li>
     <li>
       <label>Textarea</label>
